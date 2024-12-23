@@ -34,16 +34,14 @@ class MainViewModelTest{
 
 
     @Test
-    fun `when Get Story Should Not Null and Return Data`() = runTest {
-//        val createDummyStoryList = StoryDataProvider.createDummyStoryList()
-//        val data: PagingData<ListStoryItem> = PagingStoryDump.snapshot(createDummyStoryList)
-//
-//        val expectedStory = MutableLiveData<PagingData<ListStoryItem>>()
-//        expectedStory.value = data
-//
-//        Mockito.`when`(storyRepository.fetchStories()).thenReturn(expectedStory)
-//        val actualStory = storyRepository.fetchStories()
-//        Assert.assertNotNull(actualStory)
+    fun `when Get Story Should Not Null and Return No Data`() = runTest {
+        val data: PagingData<ListStoryItem> = PagingData.from(emptyList())
+        val expectedStory = MutableLiveData<PagingData<ListStoryItem>>()
+        expectedStory.value = data
+
+        Mockito.`when`(storyRepository.fetchStories()).thenReturn(expectedStory)
+        val actualStory = storyRepository.fetchStories()
+        Assert.assertNotNull(actualStory)
         Assert.assertNotNull(arrayOf("a", "b"))
     }
 
@@ -72,3 +70,4 @@ class MainViewModelTest{
         }
     }
 }
+

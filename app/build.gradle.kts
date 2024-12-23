@@ -41,6 +41,7 @@ android {
     }
 }
 
+
 dependencies {
     // Core Android Libraries
     implementation(libs.androidx.core.ktx)
@@ -108,66 +109,14 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.core.testing)
     androidTestImplementation(libs.jetbrains.kotlinx.coroutines.test)
+    implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.8.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.5")
 
     val mockito_version = "2.7.1"
     testImplementation("org.mockito:mockito-core:$mockito_version")
     testImplementation("org.mockito:mockito-inline:5.2.0")
     androidTestImplementation("org.mockito:mockito-android:$mockito_version")
+    testImplementation("net.bytebuddy:byte-buddy:1.15.11")
 
 }
 
-//dependencies {
-//
-//    implementation(libs.androidx.core.ktx)
-//    implementation(libs.androidx.appcompat)
-//    implementation(libs.material)
-//    implementation(libs.androidx.constraintlayout)
-//    implementation(libs.androidx.lifecycle.livedata.ktx)
-//    implementation(libs.androidx.lifecycle.viewmodel.ktx)
-//    implementation(libs.androidx.navigation.fragment.ktx)
-//    implementation(libs.androidx.navigation.ui.ktx)
-//    implementation(libs.play.services.maps)
-//    testImplementation(libs.junit)
-//    testImplementation(libs.junit.junit)
-//    testImplementation(libs.junit.junit)
-//    testImplementation(libs.junit.junit)
-//    androidTestImplementation(libs.androidx.junit)
-//    androidTestImplementation(libs.androidx.espresso.core)
-//    implementation(libs.androidx.datastore.preferences)
-//    implementation(libs.androidx.lifecycle.viewmodel.ktx.v261)
-//    implementation(libs.androidx.lifecycle.livedata.ktx.v261)
-//    implementation(libs.androidx.activity.ktx)
-//    implementation (libs.logging.interceptor)
-//    implementation(libs.retrofit2.retrofit)
-//    implementation(libs.retrofit2.converter.gson)
-//    implementation(libs.androidx.lifecycle.viewmodel.ktx.v262)
-//    implementation(libs.androidx.lifecycle.runtime.ktx)
-//    implementation(libs.androidx.lifecycle.livedata.ktx.v262)
-//    implementation(libs.androidx.lifecycle.viewmodel.compose)
-//    implementation(libs.androidx.paging.runtime.ktx)
-//    implementation(libs.androidx.camera.camera2)
-//    implementation(libs.androidx.camera.lifecycle)
-//    implementation(libs.androidx.camera.view)
-//    implementation(libs.androidx.exifinterface)
-//    implementation(libs.androidx.datastore.preferences)
-//    implementation(libs.kotlinx.coroutines.core)
-//    implementation(libs.kotlinx.coroutines.android)
-//    implementation (libs.androidx.datastore.preferences)
-//    implementation (libs.androidx.datastore.preferences)
-//    implementation (libs.glide)
-//    testImplementation ("org.mockito:mockito-core:5.14.2")
-//    androidTestImplementation (libs.androidx.core.testing)
-//    testImplementation (libs.androidx.core.testing)
-//    androidTestImplementation (libs.jetbrains.kotlinx.coroutines.test)
-//    testImplementation (libs.jetbrains.kotlinx.coroutines.test)
-//    testImplementation (libs.mockito.core)
-//    testImplementation (libs.mockito.android)
-//    implementation (libs.androidx.paging.runtime)
-//    testImplementation (libs.androidx.paging.common)
-//    testImplementation ("androidx.paging:paging-testing")
-//    testImplementation ("androidx.paging:paging-runtime:3.1.0")
-//    implementation ("androidx.camera:camera-core:1.4.1")
-//    implementation (libs.androidx.camera.camera2.v110)
-//    implementation (libs.androidx.camera.lifecycle.v110)
-//    implementation ("androidx.camera:camera-view:1.0.0-alpha14")
-//}
