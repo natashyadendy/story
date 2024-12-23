@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_mystory">
+
+    <fragment
+        android:id="@+id/navigation_mystory"
+        android:name="com.example.submissiondua.ui.add.AddStoryFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_mystory" />
+
+    <fragment
+        android:id="@+id/navigation_uploadstory"
+        android:name="com.example.submissiondua.ui.story.StoryFragment"
+        android:label="@string/buatcerita"
+        tools:layout="@layout/fragment_upload" />
+
+    <fragment
+        android:id="@+id/navigation_maps"
+        android:name="com.example.submissiondua.ui.maps.MapsFragment"
+        android:label="@string/maps"
+        tools:layout="@layout/fragment_maps" />
+
+</navigation>
